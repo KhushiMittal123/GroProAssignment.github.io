@@ -1,0 +1,232 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #1a1a1a;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  section {
+    padding: 50px 20px;
+  }
+  
+  /* Navigation Bar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: navy;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar a {
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  .navbar a:hover {
+    color: gold;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('luxury-home.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  .hero h1 {
+    font-size: 2.5em;
+  }
+  
+  .cta-buttons a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-primary {
+    background: gold;
+    color: black;
+  }
+  
+  .btn-primary:hover {
+    background: #ffd700;
+  }
+  
+  .btn-secondary {
+    background: navy;
+    color: white;
+  }
+  
+  .btn-secondary:hover {
+    background: #333;
+  }
+  
+  /* Services Section */
+  .services {
+    background: #f9f9f9;
+    text-align: center;
+  }
+  
+  .service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Testimonials Section with Slider */
+  .testimonials {
+    background: #f9f9f9;
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+  }
+  
+  .testimonial-slider {
+    overflow: hidden;
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .slide {
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+  }
+  
+  .slide.active {
+    display: block;
+    opacity: 1;
+    border: 2px solid gold;
+  }
+  
+  .slide p {
+    font-size: 18px;
+    font-style: italic;
+  }
+  
+  .slide span {
+    display: block;
+    font-size: 16px;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+  
+  .slider-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .slider-controls button {
+    background: navy;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .slider-controls button:hover {
+    background: gold;
+  }
+  
+  /* Contact Form Styling */
+  .contact form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .contact input,
+  .contact textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .contact textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  .contact button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background: gold;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .contact button:hover {
+    background: #ffd700;
+  }
+  
+  /* Footer */
+  .footer {
+    background: navy;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .footer .social-links a {
+    color: gold;
+    margin: 0 5px;
+  }
+  
